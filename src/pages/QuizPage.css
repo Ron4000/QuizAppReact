@@ -1,0 +1,20 @@
+.quiz-page {
+  padding: 1rem 0;
+}
+
+.quiz-page__main {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  padding-top: 0;
+}
+
+.quiz-page__navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.quiz-page__next {
+  min-width: 8.5rem;
+}
+

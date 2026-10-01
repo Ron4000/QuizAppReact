@@ -1,0 +1,89 @@
+ :root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #243044;
+  background: #f3f6fa;
+
+  --color-page: #f3f6fa;
+  --color-surface: #ffffff;
+  --color-text: #243044;
+  --color-muted: #64748b;
+  --color-border: #d8e0ea;
+  --color-accent: #3568c8;
+  --color-accent-soft: #edf3ff;
+  --color-correct: #18794e;
+  --color-correct-soft: #edf8f1;
+  --color-incorrect: #b42318;
+  --color-incorrect-soft: #fff1f0;
+  --shadow-panel: 0 2px 10px rgb(30 50 80 / 6%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  background: var(--color-page);
+}
+
+.page-shell {
+  width: min(100% - 2rem, 48rem);
+  margin: 1rem auto;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.button {
+  min-height: 2.75rem;
+  padding: 0.625rem 1rem;
+  border: 1px solid var(--color-accent);
+  border-radius: 0.5rem;
+  font-weight: 650;
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.button--primary {
+  color: #ffffff;
+  background: var(--color-accent);
+}
+
+.button--primary:hover:not(:disabled) {
+  background: #2855a8;
+}
+
+.button--secondary {
+  color: var(--color-text);
+  border-color: var(--color-border);
+  background: var(--color-surface);
+}
+
+.button--secondary:hover:not(:disabled) {
+  background: var(--color-accent-soft);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+

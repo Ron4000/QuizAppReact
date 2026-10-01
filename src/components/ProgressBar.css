@@ -1,0 +1,19 @@
+.progress {
+  width: min(100%, 760px);
+  margin: 1rem auto;
+}
+
+.progress__track {
+  height: 0.5rem;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-surface);
+}
+
+.progress__fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--color-accent);
+  transition: width 200ms ease;
+}
